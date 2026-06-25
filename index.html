@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Progress Advantage for LLM Agentsr</title>
+  <title>Progress Advantage for LLM Agents</title>
   <meta name="description" content="We introduce Progress Advantage, an implicit process reward signal derived as a byproduct of post-training, enabling step-level guidance and monitoring for LLM agents in stochastic environments.">
   <link rel="icon" type="image/x-icon" href="static/imgs/favicon.ico" />
     <link
       href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
       rel="stylesheet"
     />
-    
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
@@ -104,12 +104,12 @@
   <div class="container is-max-desktop is-full-width">
     <div class="columns is-centered">
       <video id="teaser" autoplay muted playsinline height="100%">
-        <source src="./static/videos/prog_adv_animation_4k.mp4" type="video/mp4">
+        <source src="./static/videos/prog_adv_animation_cropped.mp4" type="video/mp4">
       </video>
     </div>
     <div class="columns is-centered">
       <h2 class="subtitle has-text-centered">
-        We introduce Progress Advantage, an implicit process reward signal derived as a byproduct of post-training, enabling step-level guidance and monitoring for LLM agents in stochastic environments.
+        We introduce <strong>Progress Advantage</strong>, an implicit process reward signal derived as a byproduct of post-training, enabling step-level guidance and monitoring for LLM agents in stochastic environments.
       </h2>
     </div>
   </div>
@@ -122,7 +122,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Process reward models enable fine-grained, step-level evaluation of LLMs, yet building them for agentic settings remains prohibitively difficult: long-horizon interactions, irreversible actions, and stochastic environment feedback make both human annotation and Monte Carlo estimation infeasible at scale. In this work, we show that reinforcement learning (RL) post-training already provides the ingredients for effective step-level scoring, eliminating the need for dedicated reward model training altogether. Concretely, we derive an implicit advantage under a general stochastic Markov decision process, which we term progress advantage -- log-probability ratio between the RL-trained policy and its reference policy exactly recovers the optimal advantage function. This formulation makes the resulting signal annotation-free, domain-agnostic, and available as a byproduct of the standard RL post-training pipeline. We validate the effectiveness of the progress advantage across three different applications: test-time scaling, uncertainty quantification, and failure attribution on five benchmarks and four model families. Across all settings, it consistently outperforms confidence-based baselines and, despite requiring no task-specific training, surpasses dedicated trained reward models. We complement these results with deeper analyses on characteristics of progress advantage, offering practical guidance for adoption in real-world agentic systems.
+            Process reward models enable fine-grained, step-level evaluation of LLMs, yet building them for agentic settings remains prohibitively difficult: long-horizon interactions, irreversible actions, and stochastic environment feedback make both human annotation and Monte Carlo estimation infeasible at scale. In this work, we show that reinforcement learning (RL) post-training already provides the ingredients for effective step-level scoring, eliminating the need for dedicated reward model training altogether. Concretely, we derive an implicit advantage under a general stochastic Markov decision process, which we term <b>progress advantage</b> -- log-probability ratio between the RL-trained policy and its reference policy exactly recovers the optimal advantage function. This formulation makes the resulting signal <em>annotation-free, domain-agnostic, and available as a byproduct of the standard RL post-training pipeline</em>. We validate the effectiveness of the progress advantage across three different applications: <b>test-time scaling, uncertainty quantification, and failure attribution</b> on five benchmarks and four model families. Across all settings, it consistently outperforms confidence-based baselines and, despite requiring no task-specific training, surpasses dedicated trained reward models. We complement these results with deeper analyses on characteristics of progress advantage, offering practical guidance for adoption in real-world agentic systems.
           </p>
         </div>
       </div>
