@@ -25,44 +25,54 @@
 
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="#" target="_blank">First Author</a><sup>1</sup>,</span>
+              <a href="https://changdaeoh.github.io/" target="_blank">Changdae Oh</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="#" target="_blank">Second Author</a><sup>1,2</sup>,</span>
+              <a href="https://wendili.github.io/" target="_blank">Wendi Li</a><sup>1</sup>1</span>
             <span class="author-block">
-              <a href="#" target="_blank">Third Author</a><sup>2</sup></span>
+              <a href="https://seongheon-96.github.io/" target="_blank">Seongheon Park</a><sup>1</sup></span>
+            <span class="author-block">
+              <a href="https://mhyeh.github.io/" target="_blank">Samuel Yeh</a><sup>1</sup></span>
+            <span class="author-block">
+              <a href="https://tanwimallick.github.io/" target="_blank">Tanwi Mallick</a><sup>2</sup></span>
+            <span class="author-block">
+              <a href="https://pages.cs.wisc.edu/~sharonli/" target="_blank">Sharon Li</a><sup>1</sup></span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Your University,</span>
-            <span class="author-block"><sup>2</sup>Your Lab / Company</span>
+            <span class="author-block"><sup>1</sup>University of Wisconsin-Madison</span>
+            <span class="author-block"><sup>2</sup>Argonne National Laboratory</span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
+              <!--
               <span class="link-block">
-                <a href="#" target="_blank" class="external-link button is-rounded is-dark">
+                <a href="https://arxiv.org/pdf/2606.26080" target="_blank" class="external-link button is-rounded is-dark">
                   <span class="icon"><i class="fas fa-file-pdf"></i></span>
                   <span>Paper</span>
                 </a>
               </span>
+              -->
               <span class="link-block">
-                <a href="#" target="_blank" class="external-link button is-rounded is-dark">
+                <a href="https://arxiv.org/abs/2606.26080" target="_blank" class="external-link button is-rounded is-dark">
                   <span class="icon"><i class="ai ai-arxiv"></i></span>
                   <span>arXiv</span>
                 </a>
               </span>
               <span class="link-block">
-                <a href="#" target="_blank" class="external-link button is-rounded is-dark">
+                <a href="https://github.com/deeplearning-wisc/progress-advantage" target="_blank" class="external-link button is-rounded is-dark">
                   <span class="icon"><i class="fab fa-github"></i></span>
                   <span>Code</span>
                 </a>
               </span>
+              <!--
               <span class="link-block">
                 <a href="#" target="_blank" class="external-link button is-rounded is-dark">
                   <span class="icon"><i class="fas fa-database"></i></span>
                   <span>Data</span>
                 </a>
               </span>
+              -->
             </div>
           </div>
         </div>
@@ -72,6 +82,7 @@
 </section>
 
 <!-- ===================== Teaser ===================== -->
+<!--
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
@@ -83,7 +94,21 @@
     </div>
   </div>
 </section>
-
+-->
+<section class="hero teaser">
+  <div class="container is-max-desktop is-full-width">
+    <div class="columns is-centered">
+      <video id="teaser" autoplay muted playsinline height="100%">
+        <source src="./static/videos/prog_adv_animation_4k.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="columns is-centered">
+      <h2 class="subtitle has-text-centered">
+          We introduce the <b>multitask failure detection</b> problem for VLA models, and propose <b><span class="coolname">SAFE</span></b>, a failure detector that can detect failures for unseen tasks zero-shot and achieve state-of-the-art performance.
+      </h2>
+    </div>
+  </div>
+</section>
 <!-- ===================== Abstract ===================== -->
 <section class="section">
   <div class="container is-max-desktop">
@@ -92,15 +117,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            This is placeholder abstract text. Summarize the problem you tackle, the core
-            idea of your method, and the headline results in a few sentences. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua.
-          </p>
-          <p>
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Replace these paragraphs with your own
-            abstract while keeping it concise and self-contained.
+            Process reward models enable fine-grained, step-level evaluation of LLMs, yet building them for agentic settings remains prohibitively difficult: long-horizon interactions, irreversible actions, and stochastic environment feedback make both human annotation and Monte Carlo estimation infeasible at scale. In this work, we show that reinforcement learning (RL) post-training already provides the ingredients for effective step-level scoring, eliminating the need for dedicated reward model training altogether. Concretely, we derive an implicit advantage under a general stochastic Markov decision process, which we term progress advantage -- log-probability ratio between the RL-trained policy and its reference policy exactly recovers the optimal advantage function. This formulation makes the resulting signal annotation-free, domain-agnostic, and available as a byproduct of the standard RL post-training pipeline. We validate the effectiveness of the progress advantage across three different applications: test-time scaling, uncertainty quantification, and failure attribution on five benchmarks and four model families. Across all settings, it consistently outperforms confidence-based baselines and, despite requiring no task-specific training, surpasses dedicated trained reward models. We complement these results with deeper analyses on characteristics of progress advantage, offering practical guidance for adoption in real-world agentic systems.
           </p>
         </div>
       </div>
@@ -109,6 +126,7 @@
 </section>
 
 <!-- ===================== Method / Body ===================== -->
+<!--
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
@@ -136,15 +154,15 @@
     </div>
   </div>
 </section>
-
+-->
 <!-- ===================== BibTeX ===================== -->
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title is-3">BibTeX</h2>
-    <pre><code>@article{yourkey2026,
-  title   = {Project Title: A Placeholder Subtitle for Your Paper},
-  author  = {Author, First and Author, Second and Author, Third},
-  journal = {arXiv preprint arXiv:0000.00000},
+    <pre><code>@article{oh2026neglected,
+  title   = {Neglected Free Lunch from Post-training: Progress Advantage for LLM Agents},
+  author  = {Oh, Changdae and Li, Wendi and Park, Seongheon and Yeh, Samuel and Mallick, Tanwi and Li, Sharon},
+  journal = {arXiv preprint arXiv:2606.26080},
   year    = {2026}
 }</code></pre>
   </div>
